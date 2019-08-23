@@ -13,6 +13,7 @@
 		E81A9C1423103A59001772EF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E81A9C1223103A59001772EF /* LaunchScreen.storyboard */; };
 		E81A9C1723103A59001772EF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E81A9C1623103A59001772EF /* main.m */; };
 		E81A9C2723103D9D001772EF /* JRCMovieObjects.m in Sources */ = {isa = PBXBuildFile; fileRef = E81A9C2623103D9D001772EF /* JRCMovieObjects.m */; };
+		E81A9C2A23104581001772EF /* JRCMovieObjectController.m in Sources */ = {isa = PBXBuildFile; fileRef = E81A9C2923104581001772EF /* JRCMovieObjectController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,8 @@
 		E81A9C1623103A59001772EF /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		E81A9C2523103D9D001772EF /* JRCMovieObjects.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JRCMovieObjects.h; sourceTree = "<group>"; };
 		E81A9C2623103D9D001772EF /* JRCMovieObjects.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JRCMovieObjects.m; sourceTree = "<group>"; };
+		E81A9C2823104581001772EF /* JRCMovieObjectController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JRCMovieObjectController.h; sourceTree = "<group>"; };
+		E81A9C2923104581001772EF /* JRCMovieObjectController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JRCMovieObjectController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +82,8 @@
 		E81A9C1E23103A67001772EF /* ModelController */ = {
 			isa = PBXGroup;
 			children = (
+				E81A9C2823104581001772EF /* JRCMovieObjectController.h */,
+				E81A9C2923104581001772EF /* JRCMovieObjectController.m */,
 			);
 			path = ModelController;
 			sourceTree = "<group>";
@@ -177,6 +182,7 @@
 				E81A9C2723103D9D001772EF /* JRCMovieObjects.m in Sources */,
 				E81A9C1723103A59001772EF /* main.m in Sources */,
 				E81A9C0923103A58001772EF /* AppDelegate.m in Sources */,
+				E81A9C2A23104581001772EF /* JRCMovieObjectController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

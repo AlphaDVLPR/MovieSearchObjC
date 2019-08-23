@@ -17,11 +17,13 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, readonly, copy)NSString *title;
 @property (nonatomic, readonly, copy)NSString *summary;
 @property (nonatomic, readonly, copy)NSString *image;
+@property (nonatomic, readonly, copy)NSNumber *rating;
 
 //Now that we have all of the properties that we need then we have to set an insitializer
 - (instancetype)initWithTitle:(NSString *)title
                       summary:(NSString *)summary
-                        image:(NSString *)image;
+                        image:(NSString *)image
+                       rating:(NSNumber *)rating;
 
 //Now we need the Json Dictionary Initializer
 -(instancetype)initWithDictionary:(NSDictionary *)dictionary;
