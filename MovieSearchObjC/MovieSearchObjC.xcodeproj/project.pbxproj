@@ -14,6 +14,8 @@
 		E81A9C1723103A59001772EF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E81A9C1623103A59001772EF /* main.m */; };
 		E81A9C2723103D9D001772EF /* JRCMovieObjects.m in Sources */ = {isa = PBXBuildFile; fileRef = E81A9C2623103D9D001772EF /* JRCMovieObjects.m */; };
 		E81A9C2A23104581001772EF /* JRCMovieObjectController.m in Sources */ = {isa = PBXBuildFile; fileRef = E81A9C2923104581001772EF /* JRCMovieObjectController.m */; };
+		E81A9C3123105A5C001772EF /* JRCMovieTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E81A9C3023105A5C001772EF /* JRCMovieTableViewController.swift */; };
+		E81A9C3323105A9C001772EF /* JRCTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E81A9C3223105A9C001772EF /* JRCTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +31,9 @@
 		E81A9C2623103D9D001772EF /* JRCMovieObjects.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JRCMovieObjects.m; sourceTree = "<group>"; };
 		E81A9C2823104581001772EF /* JRCMovieObjectController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JRCMovieObjectController.h; sourceTree = "<group>"; };
 		E81A9C2923104581001772EF /* JRCMovieObjectController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JRCMovieObjectController.m; sourceTree = "<group>"; };
+		E81A9C2F23105A5C001772EF /* MovieSearchObjC-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MovieSearchObjC-Bridging-Header.h"; sourceTree = "<group>"; };
+		E81A9C3023105A5C001772EF /* JRCMovieTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JRCMovieTableViewController.swift; sourceTree = "<group>"; };
+		E81A9C3223105A9C001772EF /* JRCTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JRCTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,6 +96,9 @@
 		E81A9C1F23103A6D001772EF /* ModelView */ = {
 			isa = PBXGroup;
 			children = (
+				E81A9C3023105A5C001772EF /* JRCMovieTableViewController.swift */,
+				E81A9C2F23105A5C001772EF /* MovieSearchObjC-Bridging-Header.h */,
+				E81A9C3223105A9C001772EF /* JRCTableViewCell.swift */,
 			);
 			path = ModelView;
 			sourceTree = "<group>";
@@ -140,6 +148,7 @@
 				TargetAttributes = {
 					E81A9C0323103A58001772EF = {
 						CreatedOnToolsVersion = 10.3;
+						LastSwiftMigration = 1030;
 					};
 				};
 			};
@@ -180,9 +189,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				E81A9C2723103D9D001772EF /* JRCMovieObjects.m in Sources */,
+				E81A9C3123105A5C001772EF /* JRCMovieTableViewController.swift in Sources */,
 				E81A9C1723103A59001772EF /* main.m in Sources */,
 				E81A9C0923103A58001772EF /* AppDelegate.m in Sources */,
 				E81A9C2A23104581001772EF /* JRCMovieObjectController.m in Sources */,
+				E81A9C3323105A9C001772EF /* JRCTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -324,6 +335,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = J27FYKQAGV;
 				INFOPLIST_FILE = "$(SRCROOT)/MovieSearchObjC/Resource/Info.plist";
@@ -333,6 +345,9 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.AlphaDVLPR.MovieSearchObjC;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "MovieSearchObjC/ModelView/MovieSearchObjC-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -341,6 +356,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = J27FYKQAGV;
 				INFOPLIST_FILE = "$(SRCROOT)/MovieSearchObjC/Resource/Info.plist";
@@ -350,6 +366,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.AlphaDVLPR.MovieSearchObjC;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "MovieSearchObjC/ModelView/MovieSearchObjC-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;

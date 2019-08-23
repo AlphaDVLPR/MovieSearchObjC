@@ -17,14 +17,14 @@
 //static NSString *const image = @"poster_path";
 //static NSString *const rating = @"vote_average";
 
--(instancetype)initWithTitle:(NSString *)title summary:(NSString *)summary image:(NSString *)image rating:(NSNumber *)rating
+-(instancetype)initWithTitle:(NSString *)title summary:(NSString *)summary rating:(NSNumber *)rating
 {
     self = [super init];
     if (self)
     {
         _title = [title copy];
         _summary = [summary copy];
-        _image = [image copy];
+//        _image = [image copy];
         _rating = [rating copy];
     }
     return self;
@@ -45,10 +45,10 @@
     
     NSString *title = dataDictionary[[JRCMovieObjects titleKey]];
     NSString *summary = dataDictionary[[JRCMovieObjects summaryKey]];
-    NSString *image = dataDictionary[[JRCMovieObjects imageKey]];
+//    NSString *image = dataDictionary[[JRCMovieObjects imageKey]];
     NSNumber *rating = dataDictionary[[JRCMovieObjects ratingKey]];
 
-    return[self initWithTitle:title summary:summary image:image rating:rating];
+    return[self initWithTitle:title summary:summary rating:rating];
 
 }
 
@@ -71,10 +71,10 @@
     return @"overview";
 }
 
-+ (NSString *)imageKey
-{
-    return @"poster_path";
-}
+//+ (NSString *)imageKey
+//{
+//    return @"poster_path";
+//}
 
 + (NSNumber *)ratingKey
 {

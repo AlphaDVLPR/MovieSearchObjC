@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="xUE-ux-hkM">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="5DN-St-VCe">
     <device id="retina6_1" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -12,7 +12,7 @@
         <!--Movie Table View Controller-->
         <scene sceneID="4uR-ox-Iys">
             <objects>
-                <tableViewController id="xUE-ux-hkM" customClass="MovieTableViewController" customModule="MovieSearchApp" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController id="xUE-ux-hkM" customClass="JRCMovieTableViewController" customModule="MovieSearchObjC" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="250" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="Bl0-Fd-qFs">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -23,18 +23,15 @@
                             <textInputTraits key="textInputTraits"/>
                         </searchBar>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="movieCell" rowHeight="255" id="bve-Cb-u0p" customClass="TableViewCell" customModule="MovieSearchApp" customModuleProvider="target">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="movieCell" rowHeight="255" id="bve-Cb-u0p" customClass="JRCTableViewCell" customModule="MovieSearchObjC" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="72" width="414" height="255"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="bve-Cb-u0p" id="YpL-nN-Sqi">
                                     <rect key="frame" x="0.0" y="0.0" width="414" height="254.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="HqU-Ig-o9g">
-                                            <rect key="frame" x="15" y="11" width="147" height="234"/>
-                                        </imageView>
                                         <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="ZBA-zo-Cdh">
-                                            <rect key="frame" x="170" y="11" width="99" height="40"/>
+                                            <rect key="frame" x="20" y="11" width="99" height="40"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Movie Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PUb-ID-stf">
                                                     <rect key="frame" x="0.0" y="0.0" width="99" height="23"/>
@@ -61,28 +58,23 @@
                                                 </stackView>
                                             </subviews>
                                         </stackView>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Description" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jdW-rb-fOe">
-                                            <rect key="frame" x="170" y="61" width="232" height="184"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Description" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jdW-rb-fOe">
+                                            <rect key="frame" x="20" y="59" width="232" height="184"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                     </subviews>
                                     <constraints>
-                                        <constraint firstAttribute="bottom" secondItem="HqU-Ig-o9g" secondAttribute="bottom" constant="9.5" id="41z-UN-Ns7"/>
-                                        <constraint firstItem="ZBA-zo-Cdh" firstAttribute="top" secondItem="YpL-nN-Sqi" secondAttribute="top" constant="11" id="RG4-kb-2G3"/>
-                                        <constraint firstItem="ZBA-zo-Cdh" firstAttribute="leading" secondItem="YpL-nN-Sqi" secondAttribute="leading" constant="170" id="VDH-d4-QFK"/>
-                                        <constraint firstItem="jdW-rb-fOe" firstAttribute="firstBaseline" secondItem="ZBA-zo-Cdh" secondAttribute="baseline" constant="18.5" symbolType="layoutAnchor" id="W1D-6G-icP"/>
-                                        <constraint firstItem="HqU-Ig-o9g" firstAttribute="top" secondItem="ZBA-zo-Cdh" secondAttribute="bottom" constant="-40" id="Ycw-Ul-GA5"/>
-                                        <constraint firstAttribute="trailing" secondItem="jdW-rb-fOe" secondAttribute="trailing" constant="12" id="jEo-7C-2EK"/>
-                                        <constraint firstItem="HqU-Ig-o9g" firstAttribute="top" secondItem="YpL-nN-Sqi" secondAttribute="top" constant="11" id="tyX-sB-Jmh"/>
-                                        <constraint firstItem="jdW-rb-fOe" firstAttribute="leading" secondItem="HqU-Ig-o9g" secondAttribute="trailing" constant="8" id="vGj-jt-IwW"/>
-                                        <constraint firstAttribute="trailing" secondItem="ZBA-zo-Cdh" secondAttribute="trailing" constant="145" id="xll-q1-pgn"/>
+                                        <constraint firstAttribute="trailing" secondItem="jdW-rb-fOe" secondAttribute="trailing" constant="162" id="KS2-ka-037"/>
+                                        <constraint firstItem="ZBA-zo-Cdh" firstAttribute="top" secondItem="YpL-nN-Sqi" secondAttribute="top" constant="11" id="W1z-Rh-Ykh"/>
+                                        <constraint firstItem="jdW-rb-fOe" firstAttribute="leading" secondItem="ZBA-zo-Cdh" secondAttribute="trailing" constant="-99" id="WSZ-FW-aIe"/>
+                                        <constraint firstItem="jdW-rb-fOe" firstAttribute="leading" secondItem="YpL-nN-Sqi" secondAttribute="leading" constant="20" id="Z9z-rJ-GKI"/>
+                                        <constraint firstItem="ZBA-zo-Cdh" firstAttribute="leading" secondItem="YpL-nN-Sqi" secondAttribute="leading" constant="20" id="vmg-9u-im1"/>
                                     </constraints>
                                 </tableViewCellContentView>
                                 <connections>
                                     <outlet property="descriptionLabel" destination="jdW-rb-fOe" id="BHK-XW-PPX"/>
-                                    <outlet property="moviePosterImage" destination="HqU-Ig-o9g" id="N2a-i0-OLH"/>
                                     <outlet property="movieTitleLabel" destination="PUb-ID-stf" id="ief-Z2-2Ux"/>
                                     <outlet property="ratingNumberLabel" destination="g3m-WW-yWV" id="4bV-cH-Nv0"/>
                                 </connections>
@@ -95,10 +87,28 @@
                     </tableView>
                     <navigationItem key="navigationItem" id="5Yq-ii-G79"/>
                     <connections>
-                        <outlet property="searchbar" destination="e1F-Uk-Iwy" id="8qj-hA-Gl1"/>
+                        <outlet property="searchbar" destination="e1F-Uk-Iwy" id="Q6v-ru-Zio"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PBn-3X-H3W" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2168.1159420289855" y="94.419642857142847"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="4ET-ry-e1g">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="5DN-St-VCe" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="CjF-gD-udO">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="xUE-ux-hkM" kind="relationship" relationship="rootViewController" id="ac2-8W-xSb"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1ne-N7-H9Z" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1257.9710144927537" y="94.419642857142847"/>
         </scene>

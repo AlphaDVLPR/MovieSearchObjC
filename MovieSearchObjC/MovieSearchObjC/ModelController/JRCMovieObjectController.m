@@ -7,7 +7,7 @@
 //
 
 #import "JRCMovieObjectController.h"
-#
+
 @implementation JRCMovieObjectController
 
 //Now first we want to set the shared controller -1
@@ -88,15 +88,15 @@
           
           //Now that we have made it this far and we have in fact made it to the data array of dictionary. We can now move forword with parsing or drilling the data array
           
-          NSDictionary *postDataDictionaries = jsonDictionary[@"JSON"];
-          NSArray *childrenArray = postDataDictionaries[@"results"];
+          NSDictionary *movieDataDictionaries = jsonDictionary[@"JSON"];
+          NSArray *childArray = movieDataDictionaries[@"results"];
           //Placeholder Array so we can complete with the type that we define for our return object ([JRCMovieObjects])
           NSMutableArray *movieArray = [NSMutableArray array];
           
           
           //Now that we made it into the children array we are going to use a for loop to check all of the dictionaries for the information that we want
           //Don't forget to import JRCMovieObjects
-          for (NSDictionary *dataDictionary in childrenArray) {
+          for (NSDictionary *dataDictionary in childArray) {
               
               JRCMovieObjects *movie = [[JRCMovieObjects alloc] initWithDictionary:dataDictionary];
               //This data will be filled to the mutable array everytime that it cycles through
@@ -109,8 +109,6 @@
 //NSURL *searchURL = [self baseURL];
 //searchURL = [searchURL URLByAppendingPathComponent:searchTerm];
 //searchURL = [searchURL URLByAppendingPathExtension:@"json"];
-
-//This is for the Fetch Image
 
 
 @end
