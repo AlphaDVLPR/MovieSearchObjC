@@ -1,0 +1,375 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		E81A9C0923103A58001772EF /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E81A9C0823103A58001772EF /* AppDelegate.m */; };
+		E81A9C0F23103A58001772EF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E81A9C0D23103A58001772EF /* Main.storyboard */; };
+		E81A9C1123103A59001772EF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E81A9C1023103A59001772EF /* Assets.xcassets */; };
+		E81A9C1423103A59001772EF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E81A9C1223103A59001772EF /* LaunchScreen.storyboard */; };
+		E81A9C1723103A59001772EF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E81A9C1623103A59001772EF /* main.m */; };
+		E81A9C2723103D9D001772EF /* JRCMovieObjects.m in Sources */ = {isa = PBXBuildFile; fileRef = E81A9C2623103D9D001772EF /* JRCMovieObjects.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		E81A9C0423103A58001772EF /* MovieSearchObjC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MovieSearchObjC.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E81A9C0723103A58001772EF /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		E81A9C0823103A58001772EF /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		E81A9C0E23103A58001772EF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		E81A9C1023103A59001772EF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E81A9C1323103A59001772EF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		E81A9C1523103A59001772EF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E81A9C1623103A59001772EF /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		E81A9C2523103D9D001772EF /* JRCMovieObjects.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JRCMovieObjects.h; sourceTree = "<group>"; };
+		E81A9C2623103D9D001772EF /* JRCMovieObjects.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JRCMovieObjects.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E81A9C0123103A58001772EF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		E81A9BFB23103A58001772EF = {
+			isa = PBXGroup;
+			children = (
+				E81A9C0623103A58001772EF /* MovieSearchObjC */,
+				E81A9C0523103A58001772EF /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		E81A9C0523103A58001772EF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E81A9C0423103A58001772EF /* MovieSearchObjC.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E81A9C0623103A58001772EF /* MovieSearchObjC */ = {
+			isa = PBXGroup;
+			children = (
+				E81A9C0D23103A58001772EF /* Main.storyboard */,
+				E81A9C2023103A75001772EF /* Resource */,
+				E81A9C1F23103A6D001772EF /* ModelView */,
+				E81A9C1E23103A67001772EF /* ModelController */,
+				E81A9C1D23103A62001772EF /* Model */,
+			);
+			path = MovieSearchObjC;
+			sourceTree = "<group>";
+		};
+		E81A9C1D23103A62001772EF /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				E81A9C2523103D9D001772EF /* JRCMovieObjects.h */,
+				E81A9C2623103D9D001772EF /* JRCMovieObjects.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		E81A9C1E23103A67001772EF /* ModelController */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ModelController;
+			sourceTree = "<group>";
+		};
+		E81A9C1F23103A6D001772EF /* ModelView */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ModelView;
+			sourceTree = "<group>";
+		};
+		E81A9C2023103A75001772EF /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				E81A9C0723103A58001772EF /* AppDelegate.h */,
+				E81A9C0823103A58001772EF /* AppDelegate.m */,
+				E81A9C1023103A59001772EF /* Assets.xcassets */,
+				E81A9C1223103A59001772EF /* LaunchScreen.storyboard */,
+				E81A9C1523103A59001772EF /* Info.plist */,
+				E81A9C1623103A59001772EF /* main.m */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E81A9C0323103A58001772EF /* MovieSearchObjC */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E81A9C1A23103A59001772EF /* Build configuration list for PBXNativeTarget "MovieSearchObjC" */;
+			buildPhases = (
+				E81A9C0023103A58001772EF /* Sources */,
+				E81A9C0123103A58001772EF /* Frameworks */,
+				E81A9C0223103A58001772EF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MovieSearchObjC;
+			productName = MovieSearchObjC;
+			productReference = E81A9C0423103A58001772EF /* MovieSearchObjC.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E81A9BFC23103A58001772EF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = JRC;
+				LastUpgradeCheck = 1030;
+				ORGANIZATIONNAME = AlphaDVLPR;
+				TargetAttributes = {
+					E81A9C0323103A58001772EF = {
+						CreatedOnToolsVersion = 10.3;
+					};
+				};
+			};
+			buildConfigurationList = E81A9BFF23103A58001772EF /* Build configuration list for PBXProject "MovieSearchObjC" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E81A9BFB23103A58001772EF;
+			productRefGroup = E81A9C0523103A58001772EF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E81A9C0323103A58001772EF /* MovieSearchObjC */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E81A9C0223103A58001772EF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E81A9C1423103A59001772EF /* LaunchScreen.storyboard in Resources */,
+				E81A9C1123103A59001772EF /* Assets.xcassets in Resources */,
+				E81A9C0F23103A58001772EF /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E81A9C0023103A58001772EF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E81A9C2723103D9D001772EF /* JRCMovieObjects.m in Sources */,
+				E81A9C1723103A59001772EF /* main.m in Sources */,
+				E81A9C0923103A58001772EF /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		E81A9C0D23103A58001772EF /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E81A9C0E23103A58001772EF /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		E81A9C1223103A59001772EF /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E81A9C1323103A59001772EF /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E81A9C1823103A59001772EF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		E81A9C1923103A59001772EF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E81A9C1B23103A59001772EF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = J27FYKQAGV;
+				INFOPLIST_FILE = "$(SRCROOT)/MovieSearchObjC/Resource/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.AlphaDVLPR.MovieSearchObjC;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		E81A9C1C23103A59001772EF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = J27FYKQAGV;
+				INFOPLIST_FILE = "$(SRCROOT)/MovieSearchObjC/Resource/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.AlphaDVLPR.MovieSearchObjC;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E81A9BFF23103A58001772EF /* Build configuration list for PBXProject "MovieSearchObjC" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E81A9C1823103A59001772EF /* Debug */,
+				E81A9C1923103A59001772EF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E81A9C1A23103A59001772EF /* Build configuration list for PBXNativeTarget "MovieSearchObjC" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E81A9C1B23103A59001772EF /* Debug */,
+				E81A9C1C23103A59001772EF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E81A9BFC23103A58001772EF /* Project object */;
+}
